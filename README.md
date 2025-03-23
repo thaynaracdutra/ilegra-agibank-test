@@ -11,11 +11,14 @@
 ### CI/CD
 * ✔️ Testes automatizados com Cypress e verificação de codigo com Eslint sendo executados na pipeline do [GitHub Actions](https://github.com/thaynaracdutra/ilegra-agibank-test/actions)
 
-### Cenários de testes executados
+### Cenários de testes E2E executados
 * ✔️ Valida se a lupa é exibida com sucesso na página inicial para iniciar uma pesquisa
 * ✔️ Valida se a barra de pesquisa é exibida ao clicar na lupa
 * ✔️ Valida se uma pesquisa por um termo válido retorna pelo menos 1 resultado
 * ✔️ Valida a pesquisa retorna "nenhum resultado" ao buscar por caracteres especiais
+
+### Cenários de testes de API executados
+* ✔️ Valida se a API retorna status 200 ao pesquisar por um termo válido
 
 ## 💻 Pré-requisitos para rodar o projeto na sua maquina 💻
 
@@ -61,3 +64,4 @@ Evidencia dos testes executados e reportados pelo framework Mochawesome reporter
 * Este projeto conta com a execução via pipeline GitHub Actions, que é executada a cada push e pode ter suas execuções visualizadas [aqui](https://github.com/thaynaracdutra/ilegra-agibank-test/actions).
 * Foi decidido utilizar o framework Cypress sem o uso de Page Objects para a criação de um código mais simples e de fácil manutenção. 
 * Estando no time, com certeza incentivaria o time de desenvolvimento a adicionar data elements mais especificos nos componentes para tornar o código mais legivel. 
+* Gostaria de ressaltar alguns detalhes relacionados a aplicação e testes automatizados da mesma: Para rodar no CICD foi necessario adicionar um wait pelo tempo de busca da API, isso porque o Cypress possui um bug ainda nao resolvido e intermitente sem causa raiz aparente, é possivel validar na issue https://github.com/cypress-io/cypress/issues/19975. No mais, boas práticas de desenvolvimento foram executadas.
