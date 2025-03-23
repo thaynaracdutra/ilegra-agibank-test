@@ -11,7 +11,7 @@
 ### CI/CD
 * ✔️ Testes automatizados com Cypress e verificação de codigo com Eslint sendo executados na pipeline do [GitHub Actions](https://github.com/thaynaracdutra/ilegra-agibank-test/actions)
 
-### Casos de testes executados
+### Cenários de testes executados
 * ✔️ Valida se a lupa é exibida com sucesso na página inicial para iniciar uma pesquisa
 * ✔️ Valida se a barra de pesquisa é exibida ao clicar na lupa
 * ✔️ Valida se uma pesquisa por um termo válido retorna pelo menos 1 resultado
@@ -53,7 +53,7 @@ Ao finalizar, todos os testes devem ter sido realizados sem falhas.
 ## ⏺️ Evidencia dos testes executados ⏺️
 
 Evidencia dos testes executados e reportados pelo framework Mochawesome reporter.
-<p align="center"><img src="screenshots/mochareport.jpg" alt="allSpecsPassed"/></p>
+<p align="center"><img src="report/mochareport.jpg" alt="allSpecsPassed"/></p>
 
 
 ## ⚡ Comentários do autor ⚡
