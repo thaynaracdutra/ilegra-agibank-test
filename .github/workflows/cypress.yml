@@ -1,0 +1,23 @@
+name: E2E Tests
+
+on: push
+
+jobs:
+  chrome:
+    runs-on: ubuntu-22.04
+    name: E2E on Chrome
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.14.0'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Cypress Tests
+        run: npm run cypress:run
+        env:
+          CYPRESS_BROWSER: chrome
